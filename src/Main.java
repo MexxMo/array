@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
         System.out.println("Задание 1");
@@ -10,8 +8,14 @@ public class Main {
 
         System.out.println("Задание 2");
 
-        System.out.print(Arrays.toString(array1));
 
+        for (int i = 0; i < array1.length; i++) {
+            if (i == array1.length - 1) {
+                System.out.println(array1[i]);
+                break;
+            }
+            System.out.print(array1[i] + ", ");
+        }
 
 
 
