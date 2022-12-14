@@ -1,4 +1,3 @@
-
 public class Array {
 
 
@@ -41,11 +40,10 @@ public class Array {
             if (array < minCosts) {
                 minCosts = array;
             }
-            else {maxCosts = array;
+            if (array>maxCosts){
+                maxCosts = array;
             }
         }
-
-
 
         System.out.printf("Минимальная сумма трат за день составила %d рублей%n", minCosts);
         System.out.printf("Максимальная сумма трат за день составила %d рублей%n", maxCosts);
