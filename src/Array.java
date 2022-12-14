@@ -24,8 +24,8 @@ public class Array {
         int[] arr = generateRandomArray();
         int sum = 0;
 
-        for (int j : arr) {
-            sum += j;
+        for (int array : arr) {
+            sum += array;
 
         }
         System.out.printf("Сумма трат за месяц составила %d рублей%n", sum);
@@ -37,17 +37,16 @@ public class Array {
         int maxCosts = arr[0];
         int minCosts = arr[0];
 
-        for (int j : arr) {
-            if (j < minCosts) {
-                minCosts = j;
+        for (int array : arr) {
+            if (array < minCosts) {
+                minCosts = array;
+            }
+            else {maxCosts = array;
             }
         }
 
-        for (int j : arr) {
-            if (j > maxCosts) {
-                maxCosts = j;
-            }
-        }
+
+
         System.out.printf("Минимальная сумма трат за день составила %d рублей%n", minCosts);
         System.out.printf("Максимальная сумма трат за день составила %d рублей%n", maxCosts);
 
@@ -59,8 +58,8 @@ public class Array {
         int[] arr = generateRandomArray();
         float sum = 0;
 
-        for (int j : arr) {
-            sum += j;
+        for (int array : arr) {
+            sum += array;
         }
         sum = sum / arr.length;
         System.out.println("Сумма трат за месяц составила " + sum + " рублей");
@@ -73,10 +72,7 @@ public class Array {
 
         for (int i = reverseFullName.length - 1; i >= 0; i--) {
             System.out.print(reverseFullName[i]);
-            if (i != 0) {
                 System.out.print("");
-            }
-
         }
     }
 }
