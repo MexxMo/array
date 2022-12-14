@@ -54,8 +54,14 @@ public class Array {
     public static void task3() {
         System.out.println("Задача 3");
 
+        int[] arr = generateRandomArray();
+        float sum = 0;
 
-
+        for (int j : arr) {
+            sum += j;
+        }
+        sum = sum / arr.length;
+        System.out.println("Сумма трат за месяц составила " +sum+ " рублей");
     }
 
 }
