@@ -1,9 +1,9 @@
 public class Array {
 
 
-
-    public static void main(String[] args){
+    public static void main(String[] args) {
         task1();
+        task2();
     }
 
     public static int[] generateRandomArray() {
@@ -14,7 +14,27 @@ public class Array {
         }
         return arr;
     }
-    public static void task1(){}
 
+    public static void task1() {
+        int[] arr = generateRandomArray();
+
+        System.out.println("Задание 1");
+
+        int sum = 0;
+
+        for (int j : arr) {
+            sum += j;
+
+        }
+        System.out.printf("Сумма трат за месяц составила %d рублей",sum);
+    }
+        public static void task2(){
+
+        int[] arr = generateRandomArray();
+
+
+
+
+        }
 
 }
